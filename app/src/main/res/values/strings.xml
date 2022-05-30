@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PertemuanDuaBelas</string>
+    <string name="inter_extern_title"><![CDATA[Internal & External Storage]]></string>
+    <string name="internal_storage_title">Internal Storage</string>
+    <string name="masukkan_teks_hint">Masukkan teks</string>
+    <string name="clear_title">clear</string>
+    <string name="read_title">read</string>
+</resources>
