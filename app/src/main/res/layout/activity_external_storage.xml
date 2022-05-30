@@ -6,4 +6,5 @@
     android:layout_height="match_parent"
     tools:context=".ExternalStorageActivity">
 
+<!--    TODO: Coding Layout seperti Internal Storage dengan button Write & Read-->
 </androidx.constraintlayout.widget.ConstraintLayout>

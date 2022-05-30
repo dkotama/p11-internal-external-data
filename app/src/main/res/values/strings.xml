@@ -5,4 +5,5 @@
     <string name="masukkan_teks_hint">Masukkan teks</string>
     <string name="clear_title">clear</string>
     <string name="read_title">read</string>
+    <string name="write_title">Write</string>
 </resources>

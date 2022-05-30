@@ -27,49 +27,5 @@ public class InternalStorageActivity extends AppCompatActivity {
         internalContentET = findViewById(R.id.internal_content_edittext);
         btnWriteInternal = findViewById(R.id.btn_internal_writetext);
         btnReadInternal = findViewById(R.id.btn_internal_read);
-
-        btnWriteInternal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-                    String content = internalContentET.getText().toString() ;
-
-                    FileOutputStream fileout = openFileOutput("user_text.txt", MODE_PRIVATE);
-                    OutputStreamWriter outputWriter = new OutputStreamWriter(fileout);
-                    outputWriter.write(content);
-                    outputWriter.close();
-
-                    Toast.makeText(InternalStorageActivity.this, "File Saved Successfuly!", Toast.LENGTH_LONG).show();
-                } catch (Exception e){
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        btnReadInternal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-                    FileInputStream fileIn=openFileInput("user_text.txt");
-                    InputStreamReader InputRead= new InputStreamReader(fileIn);
-
-                    char[] inputBuffer= new char[READ_BLOCK_SIZE];
-                    String s="";
-                    int charRead;
-
-                    while ((charRead=InputRead.read(inputBuffer))>0) {
-                        // char to string conversion
-                        String readstring=String.copyValueOf(inputBuffer,0,charRead);
-                        s +=readstring;
-                    }
-                    InputRead.close();
-                    internalContentET.setText(s);
-
-
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
     }
 }

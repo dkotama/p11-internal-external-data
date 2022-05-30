@@ -20,16 +20,14 @@ public class MainActivity extends AppCompatActivity {
         btnInternalStorage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent internalIntent = new Intent(MainActivity.this, InternalStorageActivity.class) ;
-                startActivity(internalIntent);
+                // TODO: Tambahkan intent ke Internal Storage
             }
         });
 
         btnExternalStorage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent externalIntent = new Intent(MainActivity.this, ExternalStorageActivity.class) ;
-//                startActivity(externalIntent);
+                // TODO: Tambahkan intent ke External Storage
             }
         });
     }
